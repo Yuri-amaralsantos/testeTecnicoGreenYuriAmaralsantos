@@ -5,6 +5,7 @@ const PDFKitDocument = require('pdfkit');
 const { Buffer } = require('buffer');
 const db = require('../db');
 
+
 async function makePdfDocument(boletos) {
     return new Promise((resolve, reject) => {
         const doc = new PDFKitDocument({ margin: 30 });
